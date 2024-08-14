@@ -5,9 +5,11 @@ using namespace std;
 typedef pair <double, double> Diem;
 #define x first
 #define y second
+
 double kc (Diem A, Diem B) {
 	return sqrt((A.x - B.x) * (A.x - B.x) + (A.y - B.y) * (A.y - B.y));
 }
+
 int main() {
 	Diem A, B, M;
 	cin >> A.x >> A.y >> B.x >> B.y >> M.x >> M.y;
