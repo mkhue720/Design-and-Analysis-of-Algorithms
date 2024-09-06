@@ -10,7 +10,7 @@ int main() {
 	fill (S+2, S+n+1, true); //S[0] = .... = S[n] = 1
 	for (int i = 2; i <= n; i++) {
 		if (S[i]) {
-			cout << i << " ";
+			cout << i << " " << endl;
 			for (int j = i * i; j <= n; j=j+i) {
 				S[j] = 0;
 			}
